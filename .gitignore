@@ -1,0 +1,3 @@
+.env
+.../.env
+backend/job_embeddings_cache.npz

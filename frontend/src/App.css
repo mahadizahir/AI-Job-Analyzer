@@ -1,0 +1,290 @@
+
+/* Main Container */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.container h1 {
+  color: #2563eb;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.container > p {
+  text-align: center;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+/* Search Box */
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #1e293b;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #2563eb;
+}
+
+/* Resume Upload */
+
+.resume-section {
+  margin-top: 30px;
+  padding: 24px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.resume-section h2 {
+  font-size: 22px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.resume-section p {
+  color: #475569;
+}
+
+.resume-section input[type="file"] {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 100%;
+  color: #1e293b;
+}
+
+.resume-section button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.resume-section button:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.resume-section button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Resume Results */
+
+.resume-result {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.resume-result h3 {
+  margin-top: 0;
+}
+
+.resume-result pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Job Listings */
+
+.jobs-list {
+  margin-top: 35px;
+}
+
+.jobs-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.job-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.job-card h3 {
+  color: #2563eb;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.job-card p {
+  color: #475569;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.job-card strong {
+  color: #1e293b;
+}
+
+/* Load More Button */
+
+.load-more-btn {
+  display: block;
+  margin: 25px auto;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.load-more-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Error Messages */
+
+.error-message {
+  color: #dc2626 !important;
+  margin-top: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .resume-section {
+    padding: 18px;
+  }
+
+  .job-card {
+    padding: 16px;
+  }
+}
+
+
+/* AI Detected Skills */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skill-tag {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.resume-result h3 {
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+
+/* AI Job Recommendations */
+
+.recommendations-section {
+  margin-top: 35px;
+}
+
+.recommendations-section h2 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.recommendations-section > p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.recommendation-card {
+  background-color: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid #2563eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.recommendation-card h3 {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+.recommendation-card p {
+  color: #475569;
+  margin-top: 10px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .recommendation-card {
+    padding: 16px;
+  }
+}
+
+
+/* ====================================
+   Matching Skills
+==================================== */
+
+.matching-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.matching-skill-tag {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.no-matching-skills {
+  color: #64748b;
+  font-size: 14px;
+  font-style: italic;
+}
+
